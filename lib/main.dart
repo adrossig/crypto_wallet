@@ -97,172 +97,191 @@ class _MyHomePageState extends State<MyHomePage> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Container(
-                    width: 194,
-                    height: 155,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: Card(
-                      color: const Color.fromRGBO(171, 0, 231, 0.3),
-                      child: Column(
-                        children: [
-                          const SizedBox(height: 16),
-                          Row(
-                            children: [
-                              const SizedBox(width: 16),
-                              SvgPicture.asset(
-                                'assets/icons/BTC.svg',
-                                height: 35,
-                              ),
-                              const SizedBox(width: 8),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    "Bitcoin",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500),
-                                  ),
-                                  Text(
-                                    "BTC",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 15),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset(
-                                'assets/icons/Vector_BTC.svg',
-                                width: 164,
-                                height: 37,
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 17),
-                          Row(
-                            children: [
-                              const SizedBox(width: 16),
-                              const Text(
-                                "\$6780",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 14,
+                  Stack(
+                    children: [
+                      Container(
+                        width: 194,
+                        height: 155,
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(171, 0, 231, 0.35),
+                          borderRadius: BorderRadius.circular(18),
+                          boxShadow: const [
+                            BoxShadow(
+                              blurRadius: 30,
+                              offset: Offset(0, 10),
+                              color: Color.fromRGBO(0, 0, 0, 0.2),
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 16),
+                            Row(
+                              children: [
+                                const SizedBox(width: 16),
+                                SvgPicture.asset(
+                                  'assets/icons/BTC.svg',
+                                  height: 35,
                                 ),
-                              ),
-                              const SizedBox(width: 66),
-                              Row(
-                                children: [
-                                  SvgPicture.asset(
-                                      'assets/icons/arrow_drop_up.svg'),
-                                  const SizedBox(width: 7),
-                                  const Text(
-                                    '11.75%',
-                                    style: TextStyle(
-                                      color: Color.fromRGBO(4, 220, 0, 1),
-                                      fontSize: 10,
+                                const SizedBox(width: 8),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Text(
+                                      "Bitcoin",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500),
                                     ),
-                                  )
-                                ],
-                              )
-                            ],
-                          )
-                        ],
+                                    Text(
+                                      "BTC",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 15),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SvgPicture.asset(
+                                  'assets/icons/Vector_BTC.svg',
+                                  width: 164,
+                                  height: 37,
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 17),
+                            Row(
+                              children: [
+                                const SizedBox(width: 16),
+                                const Text(
+                                  "\$6780",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                                const SizedBox(width: 66),
+                                Row(
+                                  children: [
+                                    SvgPicture.asset(
+                                        'assets/icons/arrow_drop_up.svg'),
+                                    const SizedBox(width: 7),
+                                    const Text(
+                                      '11.75%',
+                                      style: TextStyle(
+                                        color: Color.fromRGBO(4, 220, 0, 1),
+                                        fontSize: 10,
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                   const SizedBox(width: 17),
-                  Container(
-                    width: 194,
-                    height: 155,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: Card(
-                      color: const Color.fromRGBO(75, 112, 255, 0.3),
-                      child: Column(
-                        children: [
-                          const SizedBox(height: 16),
-                          Row(
+                  Stack(
+                    children: [
+                      Container(
+                        width: 194,
+                        height: 155,
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(75, 112, 255, 0.3),
+                          borderRadius: BorderRadius.circular(18),
+                          boxShadow: const [
+                            BoxShadow(
+                              blurRadius: 30,
+                              offset: Offset(0, 10),
+                              color: Color.fromRGBO(0, 0, 0, 0.2),
+                            ),
+                          ],
+                        ),
+                          child: Column(
                             children: [
-                              const SizedBox(width: 16),
-                              SvgPicture.asset(
-                                'assets/icons/Ethereum.svg',
-                                height: 36,
-                              ),
-                              const SizedBox(width: 8),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    "Ethereum",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500),
+                              const SizedBox(height: 16),
+                              Row(
+                                children: [
+                                  const SizedBox(width: 16),
+                                  SvgPicture.asset(
+                                    'assets/icons/Ethereum.svg',
+                                    height: 36,
                                   ),
-                                  Text(
-                                    "ETH",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12,
-                                    ),
+                                  const SizedBox(width: 8),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        "Ethereum",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500),
+                                      ),
+                                      Text(
+                                        "ETH",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                            ],
-                          ),
-                          const SizedBox(height: 15),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset(
-                                'assets/icons/Vector_ETH.svg',
-                                height: 41,
-                                width: 164,
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 17),
-                          Row(
-                            children: [
-                              const SizedBox(width: 16),
-                              const Text(
-                                "\$1478.10",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                ),
-                              ),
-                              const SizedBox(width: 52),
+                              const SizedBox(height: 15),
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SvgPicture.asset(
-                                      'assets/icons/arrow_drop_up.svg'),
-                                  const SizedBox(width: 7),
+                                    'assets/icons/Vector_ETH.svg',
+                                    height: 41,
+                                    width: 164,
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 17),
+                              Row(
+                                children: [
+                                  const SizedBox(width: 16),
                                   const Text(
-                                    '4.75%',
+                                    "\$1478.10",
                                     style: TextStyle(
-                                      color: Color.fromRGBO(4, 220, 0, 1),
-                                      fontSize: 10,
+                                      color: Colors.white,
+                                      fontSize: 14,
                                     ),
+                                  ),
+                                  const SizedBox(width: 52),
+                                  Row(
+                                    children: [
+                                      SvgPicture.asset(
+                                          'assets/icons/arrow_drop_up.svg'),
+                                      const SizedBox(width: 7),
+                                      const Text(
+                                        '4.75%',
+                                        style: TextStyle(
+                                          color: Color.fromRGBO(4, 220, 0, 1),
+                                          fontSize: 10,
+                                        ),
+                                      )
+                                    ],
                                   )
                                 ],
                               )
                             ],
-                          )
-                        ],
+                          ),
                       ),
-                    ),
+                    ],
                   ),
                 ],
               ),
